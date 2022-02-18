@@ -1,8 +1,10 @@
 .timer-container .timer-header {
   font-size: 20px;
   font-weight: bold;
+  color: rgb(15, 1, 1);
 }
 
 .timer-container .timer-value {
   font-size: 18px;
+  color: rgb(15, 1, 1);
 }
