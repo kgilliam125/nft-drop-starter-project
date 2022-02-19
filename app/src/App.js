@@ -75,8 +75,8 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header">🍭 Candy Drop</p>
-          <p className="sub-text">NFT drop machine with fair mint</p>
+          <p className="header">🐕 Daisy Drops 🐕</p>
+          <p className="sub-text">Photo drops from a dog's life</p>
           {!walletAddress && renderNotConnectedContainer()}
         </div>
         

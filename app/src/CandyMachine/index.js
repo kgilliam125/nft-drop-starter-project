@@ -409,7 +409,7 @@ const CandyMachine = ({ walletAddress }) => {
     candyMachine.state && (
       <div className="machine-container">
         {renderDropTimer()}
-        <p>{`Items Minted: ${candyMachine.state.itemsRedeemed} / ${candyMachine.state.itemsAvailable}`}</p>
+        <p>{`Photos Minted: ${candyMachine.state.itemsRedeemed} / ${candyMachine.state.itemsAvailable}`}</p>
         {candyMachine.state.itemsRedeemed === candyMachine.state.itemsAvailable ? (
           <p className="sub-text">Sold Out 🙊</p>
         ) : (
