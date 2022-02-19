@@ -1,8 +1,6 @@
 import React, { useEffect, useState} from "react";
 import './CountdownTimer.css'
 
-
-
 const CountdownTimer = ({ dropDate }) => {
 	const [timerString, setTimerString] = useState('')
 
@@ -19,6 +17,7 @@ const CountdownTimer = ({ dropDate }) => {
 			const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 	
 			setTimerString(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+			
 			if (distance < 0) {
 				console.log('Clearing interval...')
 				clearInterval(interval)
@@ -30,9 +29,7 @@ const CountdownTimer = ({ dropDate }) => {
 				clearInterval(interval)
 			}
 		}
-	})
-
-
+	}, [])
 
 	return (
 		<div className="timer-container">
